@@ -1,10 +1,7 @@
 FROM node:12.18.3
 
 RUN mkdir /app
-COPY ../react-frontend/*.json /app/
-COPY ../react-frontend/src    /app/
-COPY ../react-frontend/public /app/
-
+COPY * /app/
 WORKDIR /app
 
 RUN echo $PWD
